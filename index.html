@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GitHub Tutorial: HTML + CSS + JS</title>
+    <meta
+      name="description"
+      content="A tiny demo project showing HTML structure, CSS styling, and JavaScript interactivity."
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="container header">
+      <div>
+        <h1>HTML + CSS + JS (GitHub Tutorial)</h1>
+        <p class="subtitle">
+          This mini project is made to show up nicely in a GitHub repository.
+        </p>
+      </div>
+
+      <button id="themeBtn" class="btn btn-secondary" type="button" aria-pressed="false">
+        Toggle theme
+      </button>
+    </header>
+
+    <main class="container grid">
+      <section class="card">
+        <h2>HTML</h2>
+        <p>
+          HTML gives the structure: headings, sections, buttons, and a small card layout.
+        </p>
+        <ul class="list">
+          <li><strong>Header</strong> with title</li>
+          <li><strong>Cards</strong> describing each part</li>
+          <li><strong>Buttons</strong> to interact</li>
+        </ul>
+      </section>
+
+      <section class="card">
+        <h2>CSS</h2>
+        <p>
+          CSS makes it look clean: spacing, colors, responsive layout, and a light/dark theme.
+        </p>
+        <div class="pill-row">
+          <span class="pill">Layout</span>
+          <span class="pill">Typography</span>
+          <span class="pill">Theme</span>
+        </div>
+      </section>
+
+      <section class="card">
+        <h2>JavaScript</h2>
+        <p>
+          JavaScript adds behavior: clicking the button updates a counter and toggles a theme.
+        </p>
+
+        <div class="counter">
+          <div class="counter__value">
+            Count:
+            <span id="count" class="mono">0</span>
+          </div>
+
+          <div class="counter__actions">
+            <button id="incBtn" class="btn" type="button">+1</button>
+            <button id="resetBtn" class="btn btn-secondary" type="button">Reset</button>
+          </div>
+        </div>
+
+        <p id="status" class="status" role="status" aria-live="polite"></p>
+      </section>
+    </main>
+
+    <footer class="container footer">
+      
+    </footer>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>
